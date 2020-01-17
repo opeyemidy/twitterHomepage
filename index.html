@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7e675542d3.js" crossorigin="anonymous"></script>
+    <style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        display: flex;
+    }
+    .left-wrapper,.right-wrapper{
+        width: 683px;
+        height: 591px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-wrapper{
+        background-color: #1da1f2;
+    }
+    /* .right-wrapper{
+        background-color: black;
+    } */
+
+    .left-content{
+        width: 388px;
+        height: 264px;
+        padding: 27px 0;
+    }
+
+    .right-content{
+        width: 350px;
+        height: 326px;
+        background-color: #fff;
+    }
+
+    .link-content{
+        height: 43px;
+    }
+
+    .left-content div{
+        font-size: 30px;
+        height: 70px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .left-content div .icon{
+        display: inline-block;
+        width: 30px;
+    }
+    .left-content div .text{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .logo-button{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-button .icon{
+        font-size: 40px;
+        color: #1da1f2;
+    }
+    .logo-button button {
+        padding: 13px 10px;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: none;
+        border: 1px solid #1da1f2;
+    }
+    .logo-button button:hover {
+        background-color: #eaf5fd;
+    }
+    .logo-button button a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #1da1f2;
+    }
+
+    h1{
+        margin-bottom: 50px;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    .db-button button{
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 15px;
+        border: none;
+        font-weight: bold;
+        background: #1da1f2;
+    }
+    .signUp:hover{
+        background: #006dbf;
+    }
+    .db-button button a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .gap{
+        height: 15px;
+    }
+
+    .logIn button{
+        border: 1px solid #1da1f2;
+        background-color: #fff;
+    }
+    .logIn button:hover{
+        background-color: #eaf5fd;
+    }
+    .logIn button a{
+        color: #1da1f2;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li{
+        list-style: none;
+        padding-right: 17px;
+    }
+    
+    ul li a{
+        font-size: 12px;
+        color: #aab8c2;
+        text-decoration: none;
+        line-height: 43px;
+    }
+    .right{
+        font-size: 12px;
+        color: #aab8c2;
+        line-height: 43px;
+    }
+    ul li a:not(:last-child):hover{
+        text-decoration: underline;
+    }
+
+    .link-content{
+        border: 1px solid #e6ecf0;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-wrapper">
+            <div class="left-content">
+                <div>
+                    <span class="icon"><i class="fas fa-search"></i></span>
+                    <span class="text">Follow your interests</span>
+                </div>
+                <div>
+                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                    <span class="text"> Hear what people are talking about</span>
+                </div>
+                <div>
+                    <span class="icon"><i class="far fa-comment"></i></span>
+                    <span class="text">Join the conversions.</span>
+                </div>
+            </div>
+        </div>
+        <div class="right-wrapper">
+            <div class="right-content">
+                <div class="logo-button">
+                    <span class="icon"><i class="fab fa-twitter"></i></span>
+                    <span><button><a href="">Log in</a></button></i></span>
+                </div>
+                <h1>See what's happening in the world right now</h1>
+                <h2>Join Twitter today.</h2>
+                <div class="db-button">
+                    <button class="signUp"><a href="">Sign up</a></button>
+                </div>
+                <div class="gap"></div>
+                <div class="db-button logIn">
+                    <button><a href="">Log in</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="link-content">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Status</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Ads info</a></li>
+            <li><a href="">Brand</a></li>
+            <li><a href="">Apps</a></li>
+            <li><a href="">Advertise</a></li>
+            <li><a href="">Marketing</a></li>
+            <li><a href="">Businesses</a></li>
+            <li><a href="">Developers</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Settings</a></li>
+            <li class="right">2020 Twitter</li>
+        </ul>
+    </div>
+</body>
+</html>
