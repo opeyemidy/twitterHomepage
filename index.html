@@ -16,7 +16,7 @@
     .container{
         display: flex;
     }
-    .left-wrapper,.right-wrapper{
+    .left-wrapper,.right-container{
         width: 683px;
         height: 591px;
         display: flex;
@@ -24,12 +24,13 @@
         align-items: center;
     }
 
+    .right-container{
+        height: 505px;
+    }
+
     .left-wrapper{
         background-color: #1da1f2;
     }
-    /* .right-wrapper{
-        background-color: black;
-    } */
 
     .left-content{
         width: 405px;
@@ -54,6 +55,47 @@
         font-weight: bold;
     }
 
+    .login-form{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .login-form input[type=text]{
+        width: 200px;
+        height: 45px;
+        border: 1px solid #e6ecf0;
+        padding: 10px;
+        margin-right: 10px;
+        
+    }
+
+    .password input[type=text]{
+        height: 45px;
+    }
+
+    .password a{
+        text-decoration: none;
+        color: #aab8c2;
+        font-size: 13px;
+    }
+
+    .login-form button {
+        padding: 13px 10px;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: none;
+        border: 1px solid #1da1f2;
+        height: 45px;
+    }
+    .login-form button:hover {
+        background-color: #eaf5fd;
+    }
+    .login-form button a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #1da1f2;
+    }
+
     .left-content div .icon{
         display: inline-block;
         width: 30px;
@@ -68,23 +110,8 @@
         justify-content: space-between;
     }
 
-    .logo-button .icon{
+    .logo .icon{
         font-size: 40px;
-        color: #1da1f2;
-    }
-    .logo-button button {
-        padding: 13px 10px;
-        border-radius: 20px;
-        background-color: #fff;
-        box-shadow: none;
-        border: 1px solid #1da1f2;
-    }
-    .logo-button button:hover {
-        background-color: #eaf5fd;
-    }
-    .logo-button button a {
-        font-weight: bold;
-        text-decoration: none;
         color: #1da1f2;
     }
 
@@ -176,10 +203,20 @@
             </div>
         </div>
         <div class="right-wrapper">
+            <form action="">
+            <div class="login-form">
+                <input type="text" placeholder="Phone,email or username">
+                <div class="password">
+                    <input type="text" placeholder="Password"><br>
+                    <span><a href="">Forgot password?</a></span>
+                </div>
+                <button><a href="">Log in</a></button>
+            </div>
+        </form>
+            <div class="right-container">
             <div class="right-content">
-                <div class="logo-button">
+                <div class="logo">
                     <span class="icon"><i class="fab fa-twitter"></i></span>
-                    <span><button><a href="">Log in</a></button></i></span>
                 </div>
                 <h1>See what's happening in the world right now</h1>
                 <h2>Join Twitter today.</h2>
@@ -191,6 +228,7 @@
                     <button><a href="">Log in</a></button>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <div class="link-content">
